@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key3",
+						"type": "uint256"
+					}
+				],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key3",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "setMapping",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Example contract.sol": "ExampleContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Example contract.sol": {
+			"keccak256": "0x7af369f70f668c2ae0e41e94ce8577e2939cea969e03ee6923b56c6304e20103",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://470cdf42bdd1612c6d01274385756b323e51303289cddd961807892648f5418d",
+				"dweb:/ipfs/QmZjwrN32R6kk8KGnLTJhHJhsNeSDhae5FghNaGrbfL4FE"
+			]
+		}
+	},
+	"version": 1
+}
