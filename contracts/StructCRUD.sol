@@ -12,12 +12,12 @@ struct Item{
 
 Item[] public items;
 uint256 public nextID = 1;
-uint256 public availableID = 0;
+uint256[] public availableID;
 
 function create(string memory _name, string memory _age) public {
-    if(availableID !=0){
-items.push(Item(_name, _age, availableID, true));
-availableID=0;
+    if(availableID.length > 0){
+        items.push(Item(_name, _age, availableID[availableID.length - 1], true));
+        availableID.pop();
     }else{
         items.push(Item(_name, _age, nextID, true));
         nextID++;
@@ -44,7 +44,7 @@ function update(string memory _name, string memory _age, uint256 _id) public {
 function remove(uint256 _id) public{
  uint256 i = findID(_id);
  items[i] = items[items.length -1];
- availableID = _id;
+ availableID.push(_id);
  items.pop();
 }
 }
